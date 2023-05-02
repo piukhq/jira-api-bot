@@ -6,9 +6,13 @@ import requests
 from sqlalchemy import select
 
 from db.session import Session
-from jira.references import (SPRINT_JIRA_FIELD, SQUAD_IDENTIFIERS,
-                             STORY_POINT_JIRA_FIELD,
-                             TECHNICAL_TICKET_LABEL_LIST, JiraSquadID)
+from jira.references import (
+    SPRINT_JIRA_FIELD,
+    SQUAD_IDENTIFIERS,
+    STORY_POINT_JIRA_FIELD,
+    TECHNICAL_TICKET_LABEL_LIST,
+    JiraSquadID,
+)
 from models.sprint import Sprint
 from models.ticket import Project, Ticket
 from projects import PROJECT_LIST, SQUAD_BASE

@@ -4,8 +4,7 @@ from sqlalchemy import select
 
 from db.session import Session
 from jira.references import JiraSquadID, SprintStatus
-from jira.ticket import (count_tickets_by_category_and_project,
-                         fetch_sprint_tickets)
+from jira.ticket import count_tickets_by_category_and_project, fetch_sprint_tickets
 from models.sprint import Sprint
 from settings import JIRA_API_SECRET, JIRA_EMAIL
 

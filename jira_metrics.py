@@ -6,13 +6,10 @@ from db.cache import CacheIDs, is_cache_outdated, update_cache
 from excel import write_data_to_spreadsheet
 from jira.backlog import catagorise_backlog_tickets, fetch_backlog_tickets
 from jira.references import JiraSquadID
-from jira.sprint import (catagorise_sprint_tickets,
-                         fetch_sprints_and_sprint_tickets)
-from jira_enums import (PROJECT_SPREADSHEETS, SPREADSHEET_BASE_DIR,
-                        JiraProjectID, Worksheets)
+from jira.sprint import catagorise_sprint_tickets, fetch_sprints_and_sprint_tickets
+from jira_enums import PROJECT_SPREADSHEETS, SPREADSHEET_BASE_DIR, JiraProjectID, Worksheets
 from projects import setup_projects_in_db
-from projects.custom_projects.trusted_channel import \
-    fetch_trusted_channel_information
+from projects.custom_projects.trusted_channel import fetch_trusted_channel_information
 
 
 @click.command()

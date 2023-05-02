@@ -1,5 +1,4 @@
-from sqlalchemy import (Column, ForeignKey, Integer, Table, Text,
-                        UniqueConstraint)
+from sqlalchemy import Column, ForeignKey, Integer, Table, Text, UniqueConstraint
 from sqlalchemy.ext.hybrid import hybrid_property
 
 from db.base import Base
